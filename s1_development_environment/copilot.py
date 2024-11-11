@@ -1,7 +1,6 @@
 import torch
-
 import torch.nn as nn
-import torch.optim as optim
+
 
 class ThreeLayerNet(nn.Module):
     def __init__(self, input_size, hidden_size1, hidden_size2, output_size):
@@ -15,6 +14,7 @@ class ThreeLayerNet(nn.Module):
         x = torch.relu(self.fc2(x))
         x = self.fc3(x)
         return x
+
 
 # Example usage
 input_size = 784  # Example input size (e.g., 28x28 images)
