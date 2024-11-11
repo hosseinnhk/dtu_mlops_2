@@ -1,5 +1,3 @@
-from typing import Tuple
-
 import matplotlib.pyplot as plt
 import torch
 from mpl_toolkits.axes_grid1 import ImageGrid
@@ -7,7 +5,7 @@ from mpl_toolkits.axes_grid1 import ImageGrid
 DATA_PATH = "../../../data/corruptmnist"
 
 
-def corrupt_mnist() -> Tuple[torch.utils.data.DataLoader, torch.utils.data.DataLoader]:
+def corrupt_mnist() -> tuple[torch.utils.data.DataLoader, torch.utils.data.DataLoader]:
     """Return train and test dataloaders for corrupt MNIST."""
     train_images, train_target = [], []
     for i in range(5):
